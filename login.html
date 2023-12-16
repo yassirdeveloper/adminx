@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+</head>
+<body class='flex h-screen bg-slate-100'>
+    <div class="container m-auto max-w-md bg-white text-center">
+        <div class="text-white bg-slate-700 py-5">Admin</div>
+        <div class="px-12 py-8">
+            <form hx-post="/login">
+                <div class="text-start">
+                    <label for="username">Username</label>
+                    <div class="pt-1 pb-3">
+                        <input class="w-full leading-8 rounded-md border-2 border-slate-200 outline-none focus:border-slate-500" type="text" id="username" name="username" required>
+                    </div>
+                    <label for="password">Password</label>
+                    <div class="pt-1 pb-3">
+                        <input class="w-full leading-8 rounded-md border-2 border-slate-200 outline-none focus:border-slate-500" type="password" id="password" name="password" required>
+                    </div>
+                </div>
+                <div class="pt-5 pb-1">
+                    <button class="w-full py-3 text-white bg-sky-500 hover:bg-sky-600 transition">login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
