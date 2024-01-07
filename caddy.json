@@ -1,0 +1,20 @@
+{
+	"apps": {
+		"http": {
+			"servers": {
+				"adminx": {
+					"listen": [":443"],
+					"routes": [
+						{
+							"match": [{"host": ["localhost"]}],
+							"handle": [{
+								"handler": "file_server",
+								"root": "."
+							}]
+						}
+					]
+				}
+			}
+		}
+	}
+}
